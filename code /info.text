@@ -25,3 +25,56 @@ step 5 : create subbranch
         git checkout origin master_sejal.y
 step 6 : check and send pull request with message and send it 
 
+My pull request : https://github.com/Brilworks-Interns/mern/pull/4
+_________________________________________________________________________________________
+
+How to config git ?
+
+step 1 : install git 
+        sudo apt install git-all
+        check 
+        git --version 
+
+step 2 : config
+    git config --global user.name "sejalyadav"
+    git config --global user.email "sejal.y@Brilworkss.com
+
+step 3 : ssh config
+    go to setting devloper setting > Personal Access Token > create one use add password  and username as its 
+
+_________________________________________________________________________________________
+
+what is cherry-pick command in github ?
+_________________________________________________________________________________________
+
+what is git diff ?
+_________________________________________________________________________________________
+
+
+what is gitlog ?
+_________________________________________________________________________________________
+
+what is git stash ?
+_________________________________________________________________________________________
+
+what is git pull ?
+_________________________________________________________________________________________
+
+what is git push ?
+_________________________________________________________________________________________
+
+what is git merge ?
+_________________________________________________________________________________________
+
+what is tag in git ?
+_________________________________________________________________________________________
+
+
+
+
+brah <!-- 
+    add c
+    sub c
+ch p
+2 commit form one
+ -->
