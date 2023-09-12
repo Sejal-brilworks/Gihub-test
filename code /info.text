@@ -1,0 +1,27 @@
+step 0 : initialalize the Repo
+          git init 
+step 1 : clone repo 
+        git clone https://github.com/Brilworks-Interns/mern.git
+
+step 2 : rename main branch to master_sejal.y
+         git branch main master_sejal.y
+
+step 3 : Empty commit
+         git commit --allow-empty -m "Empty Commit"
+
+step 4 : Add something and commit and push 
+        git add .
+        git commit -m "initial code"
+        git push origin master_sejal.y
+
+step 5 : create subbranch 
+        git checkout master_sejal.y
+        git branch hello_world
+        git status
+        git checkout hello_world  >  create folder and file make same chnages
+        git add .
+        git commit -m "code chnages"
+        git push origin hello_world
+        git checkout origin master_sejal.y
+step 6 : check and send pull request with message and send it 
+
