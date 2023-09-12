@@ -1,4 +1,21 @@
 _________________________________________________________________________________________
+Basic Git Commands
+git init
+git add .
+git commit -m "message"
+git push origin branch name
+_________________________________________________________________________________________
+
+create branch 
+git branch branchname
+_________________________________________________________________________________________
+checkout branch 
+git checkout branch name
+
+_________________________________________________________________________________________
+delete  branch 
+git branch-d branch name
+_________________________________________________________________________________________
 step 0 : initialalize the Repo
           git init 
 step 1 : clone repo 
@@ -87,6 +104,23 @@ what is tag in git ?
 _________________________________________________________________________________________
 
 what is .gitignore file ?
+
+The `.gitignore` file in a Git repository is used to tell Git which files or directories to 
+ignore and not track. 
+
+   - **Ignore a Specific File**:
+      
+     my_file.txt
+      
+
+   - **Ignore All `.log` Files**:
+      
+     *.log
+      
+
+   - **Ignore All Files in a Directory**:
+
+     /directory_to_ignore/
+
 _________________________________________________________________________________________
-what is .env file ?
 
