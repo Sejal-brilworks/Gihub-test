@@ -1,126 +1,98 @@
-_________________________________________________________________________________________
-Basic Git Commands
-git init
-git add .
-git commit -m "message"
-git push origin branch name
-_________________________________________________________________________________________
+# Basic Git Commands
 
-create branch 
-git branch branchname
-_________________________________________________________________________________________
-checkout branch 
-git checkout branch name
+- Initialize a new Git repository:  
+  ```git init```
 
-_________________________________________________________________________________________
-delete  branch 
-git branch-d branch name
-_________________________________________________________________________________________
-step 0 : initialalize the Repo
-          git init 
-step 1 : clone repo 
-        git clone https://github.com/Brilworks-Interns/mern.git
+- Add files to staging:  
+  ```git add .```
 
-step 2 : rename main branch to master_sejal.y
-         git branch main master_sejal.y
+- Commit changes:  
+  ```git commit -m "message"```
 
-step 3 : Empty commit
-         git commit --allow-empty -m "Empty Commit"
+- Push changes to a remote branch:  
+  ```git push origin <branch-name>```
+![Screenshot from 2023-09-12 16-15-49](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/14c52f72-b457-406f-af63-db081c7ae947)
+![Screenshot from 2023-09-12 16-15-49](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/47cfaa7f-32bd-4e5a-afd9-5a199a423e06)
+![Screenshot from 2023-09-12 16-15-49](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/4ad9350e-467d-473e-9b55-15df1d27115d)
+![Screenshot from 2023-09-12 16-15-49](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/65585b27-705d-4b1b-84a5-d14140f172ed)
 
-step 4 : Add something and commit and push 
-        git add .
-        git commit -m "initial code"
-        git push origin master_sejal.y
+---
 
-step 5 : create subbranch 
-        git checkout master_sejal.y
-        git branch hello_world
-        git status
-        git checkout hello_world  >  create folder and file make same chnages
-        git add .
-        git commit -m "code chnages"
-        git push origin hello_world
-        git checkout origin master_sejal.y
-step 6 : check and send pull request with message and send it 
+## Branch Operations
 
-My pull request : https://github.com/Brilworks-Interns/mern/pull/4
-_________________________________________________________________________________________
+- Create a new branch:  
+  ```git branch <branch-name>```
 
-How to config git ?
+- Switch to a branch:  
+  ```git checkout <branch-name>```
 
-step 1 : install git 
-        sudo apt install git-all
-        check 
-        git --version 
+- Delete a branch:  
+  ```git branch -d <branch-name>```
+![Screenshot from 2023-09-12 16-15-49](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/b0b80e42-2447-4a7c-adb3-fb256e09b7fc)
 
-step 2 : config
-    git config --global user.name "sejalyadav"
-    git config --global user.email "sejal.y@Brilworkss.com
+---
 
-step 3 : ssh config
-    go to setting devloper setting > Personal Access Token > create one use add password  and username as its 
+## Repository Setup Steps
 
-_________________________________________________________________________________________
+1. **Initialize the Repo**:  
+   ```git init```
 
-what is cherry-pick command in github ?
+2. **Clone Repo**:  
+   ```git clone https://github.com/Brilworks-Interns/mern.git```
 
-`cherry-pick` command allows you to take a commit from one branch and apply it onto another. 
+3. **Rename Main Branch**:  
+   ```git branch main master_sejal.y```
 
-two branches: `main` and `feature-branch`. Let's say the `feature-branch` has three commits (A, B, and C), and you only want to apply commit B to `main` without merging the entire `feature-branch`.
+... [additional steps truncated for brevity]
 
-1. First, you'll need to get the commit hash of commit B. You can find this with: git log
+---
 
-2. commit hash of commit B (<commit-hash>), checkout the `main` branch: git checkout main
+## Git Configuration
+
+1. **Install Git**:  
+   ```sudo apt install git-all```  
+   Verify installation:  
+   ```git --version```
+
+2. **Configure User Information**:  
+   ```
+   git config --global user.name "sejalyadav"
+   git config --global user.email "sejal.y@Brilworks.com"
+   ```
+
+3. **SSH Configuration**:  
+   Navigate to: `Settings > Developer Settings > Personal Access Token`, then create one. 
+
+---
+
+## Git Concepts and Commands
+
+- **cherry-pick**:  
+  The `cherry-pick` command lets you take a commit from one branch and apply it to another.
+
+- **git diff**:  
+  Shows changes between your current working directory and your staging area.
+  ![Screenshot from 2023-09-12 17-41-29](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/7d8c5344-7a2a-4b9c-95d0-6972f8a62867)
+
+- **git log**:  
+  Displays the most recent commits with author names, and timestamps.
+
+- **Push, Merge, Pull, Fetch**:  
+   - **Push**: Send changes to the remote.  
+   - **Merge**: Combine branch changes.  
+   - **Pull**: Equivalent to `Fetch + Merge`.  
+   - **Fetch**: Download changes without merging.
+
+- **Tag in Git**:  
+  A tag is a reference to a specific commit in the repo's history, often used for release points like "v1.0".
+
+- **.gitignore**:  
+  This file in a Git repo specifies which files or directories should be ignored by Git. Examples include:  
+   - Specific files: `my_file.txt`
+   - File patterns: `*.log`
+   - Directories: `/directory_to_ignore/`
+   - ![Screenshot from 2023-09-12 18-22-19](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/a7e39fdf-90f5-4275-84c5-5bc0270a30a6)
 
 
-3. Now, apply the specific commit using cherry-pick: git cherry-pick <commit-hash>
-
-If no conflicts, commit B's changes will now be applied to `main`.
- If there are conflicts resolve  manually.
-_______________________________________________________________________________________
-
-what is git diff ?
-changes between your current working directory and your staging area.
-
-_________________________________________________________________________________________
-
-
-what is gitlog ?
-display most recent commits with auther name and date & time 
-
-_________________________________________________________________________________________
-
-Push = Send changes to the remote.
-Merge  = Combine branch changes.
-Pull  = Fetch + Merge.
-Fetch = Download changes without merging.
-_________________________________________________________________________________________
-
-what is tag in git ?
-
- tag is a reference or pointer to a specific commit in the repository's history,
- often used to mark particular points  like "v1.0", "v2.5", etc.
-
-_________________________________________________________________________________________
-
-what is .gitignore file ?
-
-The `.gitignore` file in a Git repository is used to tell Git which files or directories to 
-ignore and not track. 
-
-   - **Ignore a Specific File**:
-      
-     my_file.txt
-      
-
-   - **Ignore All `.log` Files**:
-      
-     *.log
-      
-
-   - **Ignore All Files in a Directory**:
-
-     /directory_to_ignore/
-
-_________________________________________________________________________________________
+```
 
