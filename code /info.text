@@ -1,0 +1,80 @@
+step 0 : initialalize the Repo
+          git init 
+step 1 : clone repo 
+        git clone https://github.com/Brilworks-Interns/mern.git
+
+step 2 : rename main branch to master_sejal.y
+         git branch main master_sejal.y
+
+step 3 : Empty commit
+         git commit --allow-empty -m "Empty Commit"
+
+step 4 : Add something and commit and push 
+        git add .
+        git commit -m "initial code"
+        git push origin master_sejal.y
+
+step 5 : create subbranch 
+        git checkout master_sejal.y
+        git branch hello_world
+        git status
+        git checkout hello_world  >  create folder and file make same chnages
+        git add .
+        git commit -m "code chnages"
+        git push origin hello_world
+        git checkout origin master_sejal.y
+step 6 : check and send pull request with message and send it 
+
+My pull request : https://github.com/Brilworks-Interns/mern/pull/4
+_________________________________________________________________________________________
+
+How to config git ?
+
+step 1 : install git 
+        sudo apt install git-all
+        check 
+        git --version 
+
+step 2 : config
+    git config --global user.name "sejalyadav"
+    git config --global user.email "sejal.y@Brilworkss.com
+
+step 3 : ssh config
+    go to setting devloper setting > Personal Access Token > create one use add password  and username as its 
+
+_________________________________________________________________________________________
+
+what is cherry-pick command in github ?
+_________________________________________________________________________________________
+
+what is git diff ?
+_________________________________________________________________________________________
+
+
+what is gitlog ?
+_________________________________________________________________________________________
+
+what is git stash ?
+_________________________________________________________________________________________
+
+what is git pull ?
+_________________________________________________________________________________________
+
+what is git push ?
+_________________________________________________________________________________________
+
+what is git merge ?
+_________________________________________________________________________________________
+
+what is tag in git ?
+_________________________________________________________________________________________
+
+
+
+
+brah <!-- 
+    add c
+    sub c
+ch p
+2 commit form one
+ -->
