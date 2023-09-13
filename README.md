@@ -56,7 +56,9 @@
    ```
    git config --global user.name "sejalyadav"
    git config --global user.email "sejal.y@Brilworks.com"
+   git config --list
    ```
+![Screenshot from 2023-09-13 07-23-58](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/4da334ec-2505-4e2c-a85b-e15dc7150dce)
 
 3. **SSH Configuration**:  
    Navigate to: `Settings > Developer Settings > Personal Access Token`, then create one. 
@@ -169,6 +171,14 @@
    - File patterns: `*.log`
    - Directories: `/directory_to_ignore/`
    - ![Screenshot from 2023-09-12 18-22-19](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/a7e39fdf-90f5-4275-84c5-5bc0270a30a6)
+   - ### Remote:
+
+- **`git remote show <remote_name>`**: Show information about a remote repository.
+- **`git remote remove <remote_name>`**: Remove a remote repository.
+- **`git remote -v`** : check current remote repo
+ 
+- ![Screenshot from 2023-09-13 07-41-08](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/da0ac3c9-d75f-4437-b95a-1e92aa95450f)
+
 
 
 
