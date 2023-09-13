@@ -171,8 +171,8 @@
    - File patterns: `*.log`
    - Directories: `/directory_to_ignore/`
    - ![Screenshot from 2023-09-12 18-22-19](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/a7e39fdf-90f5-4275-84c5-5bc0270a30a6)
-   - ### Remote:
-
+   
+- ** Remote** :
 - **`git remote show <remote_name>`**: Show information about a remote repository.
 - **`git remote remove <remote_name>`**: Remove a remote repository.
 - **`git remote -v`** : check current remote repo
@@ -183,7 +183,8 @@
 
 ![Screenshot from 2023-09-13 07-44-33](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/054b9551-162a-4c29-bfaa-51f71a30aa83)
 
--**git fetch --all** : Fetch all remotes.
+- **git fetch --all** : Fetch all remotes.
+- 
 ![Screenshot from 2023-09-13 07-46-22](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/96d6a19f-a1e0-4b1f-9aca-e14063269444)
 
 
