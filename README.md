@@ -188,6 +188,36 @@
 ![Screenshot from 2023-09-13 07-46-22](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/96d6a19f-a1e0-4b1f-9aca-e14063269444)
 
 
+```
+##  `cherry-pick`
+
+The `git cherry-pick` command is used to apply the changes introduced by a specific commit onto another branch.
+
+1. **Identify the Commit Hash**:  
+   View the commit history and get the hash of the bug-fix commit:
+   ```bash
+   git log feature-branch
+   ```
+   Assume the commit hash of the fix is `a12345b`.
+
+2. **Checkout the Target Branch**:  
+   Switch to the branch where you want to apply the bug-fix commit, in this case, `main`:
+   ```bash
+   git checkout main
+   ```
+
+3. **Apply the Commit using cherry-pick**:  
+   ```bash
+   git cherry-pick a12345b
+   ```
+ commit master branch 
+![Screenshot from 2023-09-13 10-34-11](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/fcd14765-37c8-4eef-8c8b-2479a182e192)
+
+
+crated pull request : https://github.com/Brilworks-Interns/mern/pull/4
+Practice Github commads : https://github.com/Sejal-brilworks/Gihub-test
+
+
 
 
 
