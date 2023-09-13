@@ -179,6 +179,14 @@
  
 - ![Screenshot from 2023-09-13 07-41-08](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/da0ac3c9-d75f-4437-b95a-1e92aa95450f)
 
+- **`git show`** : Show various objects like commits, tags, etc.
+
+![Screenshot from 2023-09-13 07-44-33](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/054b9551-162a-4c29-bfaa-51f71a30aa83)
+
+-**git fetch --all** : Fetch all remotes.
+![Screenshot from 2023-09-13 07-46-22](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/96d6a19f-a1e0-4b1f-9aca-e14063269444)
+
+
 
 
 
