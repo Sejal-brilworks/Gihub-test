@@ -214,6 +214,43 @@ The `git cherry-pick` command is used to apply the changes introduced by a speci
 ![Screenshot from 2023-09-13 10-34-11](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/fcd14765-37c8-4eef-8c8b-2479a182e192)
 
 
+###  `Stashing`
+
+Git stashing allows you to temporarily save changes that you don't want to commit immediately.  need to switch context .
+
+**Practical Example**:  
+Imagine you're working on a new feature in your `copy-branch`, but there's an urgent bug reported in the `main` branch that you need to fix immediately.
+
+1. **Stash Your Changes**:  
+   Your working directory has changes related to the new feature. You don't want to commit them yet, so you stash them:
+   ```bash
+   git stash save "New feature work in progress"
+   ```
+
+2. **Switch to the Bug-Fix Branch and Fix the Bug**:  
+   You can now checkout the `main` branch and fix the urgent bug:
+   ```bash
+   git checkout main
+   # ... make changes and fix the bug ...
+   git commit -m "Fixed the urgent bug"
+   ```
+
+3. **Switch Back to Your Feature Branch and Apply Stashed Changes**:  
+   After fixing the bug, you want to continue working on your new feature. First, switch back to the `copy-branch`:
+   ```bash
+   git checkout  copy-branch
+   ```
+
+   Then, apply the stashed changes:
+   ```bash
+   git stash pop
+   ```
+ `copy-branch` is back to the state before the urgent bug fix, and you can continue developing your new feature.
+
+![Screenshot from 2023-09-13 10-50-21](https://github.com/Sejal-brilworks/Gihub-test/assets/144772574/33eebb83-9a7b-4d9c-9421-9108e88195d8)
+
+
+
 crated pull request : https://github.com/Brilworks-Interns/mern/pull/4
 Practice Github commads : https://github.com/Sejal-brilworks/Gihub-test
 
